@@ -1,0 +1,118 @@
+body{
+    background: url(Images/Fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+h1{
+    width: fit-content;
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 60px;
+    box-shadow: 5px 5px 0 #000;
+    padding: 20px 30px;
+}
+footer{
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#000;
+    color: #000;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+/*Pantalla Inicio*/
+#pantalla-inicio{
+    display: none;
+    text-align: center;
+    font-size: 30px;
+}
+#pantalla-inicio{
+    margin:60px 0;
+}
+.btn{
+    border:none;
+    background: rgba(43, 22, 224, 0.712);
+    color: #fff;
+    padding:10px 20px;
+    border-radius:50px;
+    cursor:pointer;
+    transition: -5%;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+/*Pantalla juego*/
+#pantalla-juego{
+    display: block;
+}
+.pantalla-juego{
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+.pantalla-juego img{
+    max-width: 400px;
+    width:100%;
+}
+.opciones{
+    max-width: 400px;
+    margin: auto;
+}
+.Opcion{
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 400px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+.Opcion .letra{
+    background-color: #1878e6;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 35px;
+    border: 5px solid #fff;
+    position: relative;
+}
+.Opcion .nombre{
+    background: #fff;
+    width: 100%;
+    font-size:25px;
+    position: absolute;
+    margin-left: 30px;
+    z-index: -2;
+    border-radius: 0 20px 20px 0;
+    padding: 7px 0 7px 30px;
+}
+/* clases que se aplicará cuando haya acertada la opcion  */
+.Opcion .nombreAcertada{
+    background-color: yellowgreen;
+    color: #fff;
+}
+.Opcion .letraAcertada{
+    background-color: yellowgreen;
+    color: #fff ;
+}
+/* clases que se aplicaran cuando se equivoque en la opcion elegida */
+.Opcion .nombreNoAcertada{
+    background-color: darkred;
+    color: #fff;
+}
+.Opcion .letraNoAcertada{
+    background-color: darkred;
+    color: #fff;
+}
+
+/*Pantalla final*/
+#pantalla-final{
+    display: none;
+}
