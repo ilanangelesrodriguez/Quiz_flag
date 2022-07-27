@@ -13,22 +13,22 @@
     <!--pantalla inicial -->
     <div id="pantalla-inicio">
         <p>¿Que país identificas?</p>
-        <button class="btn">Comenzar</button>
+        <button class="btn" onclick="comenzarJuego()">Comenzar</button>
     </div>
 
     <!--Pamtalla del juego-->
     <div class="pantalla-juego" id="pantalla-juego">
         <img src="images/Peru.png" alt="" id="peruflag">
         <div class="Opciones">
-            <div class="Opcion" id="op0">
+            <div class="Opcion" id="op0" onclick="comprobarRespuesta(0)">
                 <div class="letra" id="l0">A</div>
                 <div class="nombre" id="n0">Opcion A</div>
             </div>
-            <div class="Opcion" id="op1">
+            <div class="Opcion" id="op1" onclick="comprobarRespuesta(1)">
                 <div class="letra" id="l1">B</div>
                 <div class="nombre" id="n1">Opcion B</div>
             </div>
-            <div class="Opcion" id="op2">
+            <div class="Opcion" id="op2" onclick="comprobarRespuestar(2)">
                 <div class="letra" id="l2">A</div>
                 <div class="nombre" id="n2">Opcion C</div>
             </div>
@@ -38,8 +38,10 @@
     <div id="pantalla-final">
         <h2>Correcto: <span id="numCorrectas">3</span></h2>
         <h2>Incorrecto: <span id="numIncorrectas">2</span></h2>
-        <button class="btn">Volver</button>
+        <button class="btn" onclick="volver()">Volver</button>
     </div>
     <footer>Desarrollado por Ilan Néstor Angeles Rodriguez</footer>
+    <script src="script.js"></script>
+
 </body>
 </html>
