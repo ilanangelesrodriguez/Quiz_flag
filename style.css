@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One';
+}
 body{
     background: url(https://github.com/ilanangelesrodriguez/Quiz_flag/blob/main/Images/Fondo.png?raw=true);
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
+    display: inline;
 }
-h1{
+h2{
     width: fit-content;
     background-color: #fff;
     margin: 40px auto;
@@ -13,6 +19,7 @@ h1{
     padding: 20px 30px;
 }
 footer{
+    display: inline;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -38,6 +45,7 @@ footer{
     width: 250px;
    }
 img{
+    display: inline;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
